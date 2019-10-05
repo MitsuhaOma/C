@@ -1,0 +1,14 @@
+#include<stdio.h>
+ int main(void)
+ {
+ 	int no,i;
+ 	printf("请输入一个正整数：");
+	 scanf("%d",&no);
+	i=1;
+	if (no>=2)/*判定整数no是否可以进行操作*/ 
+	  while(i*2<no){
+	  i=i*2;	
+	  printf("%d ",i);	
+	  };
+	 return 0 ;
+  } 
