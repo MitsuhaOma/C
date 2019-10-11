@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main(void) 
+ {
+ 	int a,b,len,wei,i,j;
+ 	puts("让我们画一个长方形。");
+	 printf("一边：");scanf("%d",&a);
+	 printf("另一边：");scanf("%d",&b);
+	 len=(b>a)?b:a;
+	 wei=(b>a)?a:b;
+	 i=0;
+   while(i<wei){
+	 	j=0;
+	 	i=i+1;
+	 	do{putchar('*');
+	 		j++;
+		 }while(j<len);
+		 putchar('\n');
+	 }
+	 
+ 	return 0;
+ }
