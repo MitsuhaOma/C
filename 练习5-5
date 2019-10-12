@@ -1,0 +1,21 @@
+#include<stdio.h>
+ int main(void) 
+ #define number 7
+ {
+ 	int i;
+ 	int a[number];
+ 	for(i=0;i<number;i++)
+ 	{
+ 		printf("x[%d]:",i+1);
+		 scanf("%d",&a[i]); 
+	 }
+	 for(i=0;i<(number/2);i++) {
+	 	int temp=a[i];
+	 	   a[i]=a[number-1-i];
+	 	 a[number-1-i]=temp;  
+	 	}
+	 	puts("顺序颠倒了。");
+	 	for(i=0;i<number;i++)
+	 	printf("x[%d]:%d\n",i,a[i]);
+ 	return 0;
+ }
