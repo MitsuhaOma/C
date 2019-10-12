@@ -1,0 +1,27 @@
+#include<stdio.h>
+ int main(void) 
+ #define number 80 
+ {
+ 	int i;
+ 	int a[number];
+ 	int no;
+ 	printf("请输入数据个数：") ;
+ 	do{
+ 		scanf("%d",&no);
+ 		if(no<1||no>number)
+ 	printf("请输入1~%d的数。",number);
+	 }while(no<1||no>number);
+	 for(i=0;i<no;i++){
+	 	printf("%d号：",i+1);
+	 	scanf("%d",&a[i]);
+	 }
+printf("{");
+	 for(i=0;i<no;i++){
+	 if(i+1<no)
+	 printf("%d,",a[i]);
+	 else
+	 printf("%d",a[i]);
+}
+	 printf("}");
+ 	return 0;
+ }
