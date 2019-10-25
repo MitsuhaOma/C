@@ -1,0 +1,27 @@
+#include<stdio.h>
+  int main(void)
+  {  
+  int a,b,s;
+  int min,max,sum;
+  	puts("请输入两个整数。");
+  	sum=0;
+	  printf("整数a：");scanf("%d",&a);
+	  printf("整数b：");scanf("%d",&b);
+	  if (a>b)
+	  {
+	   max=a;
+	  min=b;
+	  }
+	  else 
+	  {
+	  max=b;
+	  min=a;
+	  }
+	  s=min;
+	  do {
+	  	sum=sum+s;
+	  	s=s+1;
+	  	} while(s<=max);
+	  	printf("大于等于%d小于等于%d的所有整数的和为%d。\n",min,max,sum); 
+		  return 0;
+   } 

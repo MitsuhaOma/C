@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+int b;
+double a;
+a=b=1.5;
+printf("%f   %d",a,b);
+return 0;
+}
+得到结果，a=1.000000  b=1
